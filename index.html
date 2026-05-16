@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/style.css">
+
+    <!-- font icons cdn links -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+    <title>Sandeep Portfolio</title>
+</head>
+<body>
+    <main>
+        <section class="sidebar">
+            <div class="side-bar-info">
+                <div class="avatar">
+                    <img src="images/me.png" alt="image not found">
+                </div>
+                <div class="side-info">
+                    <h2 class="header">Sandeep G Naik</h2>
+                    <p class="title">Web Developer</p>
+                </div>
+                <button class="info-more-button" id="info-more-button" onclick="showSideBarMoreInfo()">
+                    <i class="fa-solid fa-angle-down"></i>
+                </button>
+            </div>
+                <div class="sidebar-more-info" id="sidebar-more-info">
+                    <div class="seperator"></div>
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="contact-info">
+                                <p title="contact-title" id="contact-title">Email</p>
+                                <a href="sandynaik847@gmail.com" class="contact-details">sandynaik847@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-mobile"></i>
+                            </div>
+                            <div class="contact-info">
+                                <p title="contact-title" id="contact-title">Mobile</p>
+                                <p class="contact-details">8979657676</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="contact-info" >
+                                <p id="contact-title">Birthday</p>
+                                <p class="contact-details">12-01-2003</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="contact-info" >
+                                <p id="contact-title">Location</p>
+                                <p class="contact-details">Bengaluru</p>
+                                <p class="contact-details">Nagarbhavi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seperator"></div>   
+                    <div class="social-list">
+                        <div class="scoial-item">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                        <div class="scoial-item">
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div class="scoial-item">
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>  
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- main content section -->
+        <section class="content-section">
+            <!-- navbar -->
+            <nav class="navbar">
+                <div class="nav-list">
+                    <div class="nav-item">
+                        <button class="nav-link" onclick="toggleSection('about')">About</button>
+                    </div>
+                    <div class="nav-item">
+                        <button class="nav-link" onclick="toggleSection('resume')">Resume</button>
+                    </div>
+                    <div class="nav-item">
+                        <button class="nav-link" onclick="toggleSection('project')">Project</button>
+                    </div>
+                    <div class="nav-item">
+                        <button class="nav-link" onclick="toggleSection('contact')">Contact</button>
+                    </div>
+                </div>
+            </nav>
+
+            <article class="about tab" id="about">
+                <div class="article-title">
+                    <h2>About Me</h2>
+                </div>
+                <div class="artilce-tab">
+
+                </div>
+                <div class="about-text">
+                    <p>
+                        My name is Sandeep. I am a passionate and dedicated Java developer with hands-on knowledge of Java, Spring Boot, JSP, and MySQL. I enjoy building backend applications and connecting them with databases to create complete, working systems.
+                    </p>
+                    <p>
+                        I have a strong interest in developing scalable and efficient web applications. I am comfortable with core Java concepts, REST APIs using Spring Boot, database operations using MySQL, and dynamic web pages using JSP.
+                    </p>
+                    <p>
+                        I am a quick learner, adaptable to new technologies, and I enjoy solving real-world problems through coding. I believe consistency and continuous learning are the keys to success in the software industry.
+                    </p>
+                    <p>
+                        My goal is to work in a challenging environment where I can improve my technical skills, contribute to meaningful projects, and grow into a full-stack Java developer.
+                    </p>
+                </div>
+                <div class="service">
+                    <div class="service-title">
+                        <h2>Whats I'm Doing</h2>
+                    </div>
+                    <div class="service-list">
+                        <div class="service-item">
+                            <div class="service-icon-box">
+                                <img src="images/icon-design.svg" alt="image Not found">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="service-content-title">Web Design</h4>
+                                <p>The most modern and high-quality design made at a professional level.</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                             <div class="service-icon-box">
+                                <img src="images/icon-dev.svg" alt="image Not found">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="service-content-title">Web Devlopment</h4>
+                                <p>High-quality development of sites at the professional level.</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon-box">
+                                <img src="images/logo-design.svg" alt="image Not found">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="service-content-title">Logo Design</h4>
+                                <p>Designing unique, memorable logos that represent your brand identity.</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon-box">
+                                <img src="images/content-writing.svg" alt="image Not found">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="service-content-title">Content Writing</h4>
+                                <p>Crafting clear, engaging, and SEO-friendly content that connects with your audience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h2>Skills</h2>
+                    
+                    <div class="skills-list">
+                        <div class="skills-item">
+                            <img src="images/html-logo.png" alt="image Not found">
+                        </div>
+                        <div class="skills-item">
+                            <img src="images/css-logo.png" alt="image Not found">
+                        </div>
+                        <div class="skills-item">
+                            <img src="images/javascript-logo.png" alt="image Not found">
+                        </div>
+                        <div class="skills-item">
+                            <img src="images/java-logo.png" alt="image Not found">
+                        </div>
+                        <div class="skills-item">
+                            <img src="images/hibernate-logo.png" alt="image Not found">
+                        </div>
+                        <div class="skills-item">
+                            <img src="images/spring-boot-logo.webp" alt="image Not found">
+                        </div>
+                         <div class="skills-item">
+                            <img src="images/mysql-logo.svg" alt="image Not found">
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="dev-tools">
+                    <h2>Dev Tools</h2>
+                    <div class="dev-tools-list">
+                        <div class="dev-tools-item">
+                            <img src="images/postman-logo.png" alt="image Not found">
+                        </div>
+                        <div class="dev-tools-item">
+                            <img src="images/vs-code-logo.png" alt="image Not found">
+                        </div>
+                         <div class="dev-tools-item">
+                            <img src="images/thymeleaf-logo.png" alt="image Not found">
+                        </div>
+                         <div class="dev-tools-item">
+                            <img src="images/eclipse-logo.png" alt="image Not found">
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- resume section -->
+        <article class="resume tab" id="resume">
+                <div class="article-title">
+                    <h2>RESUME</h2>
+                </div>
+                <div class="artilce-tab">
+
+                </div>
+                <div class="timeline-div">
+                    <div class="timeline-div-heading">
+                        <div class="timeline-div-icon">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                         <h3>Education</h3>
+                    </div>
+                       
+                        <ul class="timeline">
+                            <li class="timeline-item">
+                                <h3>Government First Grade College Honnavar</h3>
+                                <span>2021-2024</span>
+                                <P>I completed my BCA in GFGC honnavar</P>
+                            </li>
+                            
+                        </ul>
+                         <ul class="timeline">
+                            <li class="timeline-item">
+                                <h3>Mohan. k. Shetty Government College Honnavar</h3>
+                                <span>2019-2021</span>
+                                <P>I completed my PUC in    MKSGCH honnavar</P>
+                            </li>
+                            
+                        </ul>
+                         <ul class="timeline">
+                            <li class="timeline-item">
+                                <h3>Government Junior College Idagunji </h3>
+                                <span>2021-2024</span>
+                                <P>I completed my SSLC in GJCI </P>
+                            </li>
+                            
+                        </ul>
+                </div>
+
+
+                <div class="timeline-div">
+                    <div class="timeline-div-heading">
+                        <div class="timeline-div-icon">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                         <h3>Experience</h3>
+                    </div>
+                       
+                        <ul class="timeline">
+                            <li class="timeline-item">
+                                <h3>Web Devloper</h3>
+                                <span>2025</span>
+                                <P>At Ascend Soft</P>
+                            </li>
+                            
+                        </ul>
+                        
+                </div>
+
+
+            <div class="overall-skills">
+                <div class="overall-skills-heading">
+                    <h2>My Skills</h2>
+                </div>
+                <div class="overall-skills-list">
+
+                    <div class="overall-skills-item">
+                        <h5>Front-End Development <span>90%</span></h5>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--width: 90%"></div>
+                        </div>
+                    </div>
+
+                    <div class="overall-skills-item">
+                        <h5>Back-End Development <span>80%</span></h5>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--width: 80%"></div>
+                        </div>
+                    </div>
+
+                    <div class="overall-skills-item">
+                        <h5>Web Development <span>80%</span></h5>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="overall-skills-item">
+                        <h5>Editing <span>60%</span></h5>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="projects tab" id="project">
+            <div class="article-title">
+                    <h2>PROJECTS</h2>
+            </div>
+            <div class="artilce-tab">
+
+            </div>
+            <div class="projects-list">
+                <!-- eccomerce-project -->
+                <div class="project-item pr-toggle">
+                    <div class="project-image">
+                        <img src="images/Food-App.png" alt="Food App">
+                    </div>
+                    <div class="project-details">
+                        <p>Food Ordering App</p>
+                        <p class="more-project-button"  onclick="toggleProjectSection('project-1')">more info</p>
+                    </div>
+                </div>
+                
+                <div class="more-project-info " id="project-1">
+                    <span class="close-info" onclick="closeProjectInfo('project-1')">close info</span>
+                    <h2 id="project-heading">Food Ordering App</h2>
+                    
+                    <div class="project-video">
+                        <video src="/videos/Food-App.mp4" controls></video>
+                    </div>
+                    <div class="project-description">
+                        <h3>Project Description</h3>
+                        <p>This food ordering web app uses Java (JSP/Servlets) for the backend and HTML/CSS for the frontend. Users can browse restaurants, add items to cart, choose delivery addresses, and place orders. Admins can manage menus and track orders. The UI is clean and inspired by platforms like Swiggy, with MySQL used for data management</p>
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>User authentication and authorization</li>
+                            <li>Browse Restaurants & Menus</li>
+                            <li>Add to Cart & Manage Cart</li>
+                            <li>Multiple Payment Options</li>
+                            <li>Ordering item</li>
+                            <li>Order Tracking & History</li>
+                            <li>Manage User Profile</li>
+                        </ul>
+                    </div>
+                    <div class="tecnologies">
+                        <h3>Technologies Used</h3>
+                        <div class="tec-icons">
+                                    <div>
+                                        <i class="fa-brands fa-java" style="font-size: 80px;"></i>
+                                        <h4>JAVA</h4>
+                                    </div>
+                                    <div>
+                                         <i class="fa-brands fa-html5" style="font-size: 80PX;"></i>
+                                        <h4>HTML</h4>
+                                    </div>
+                                    <div>
+                                        <i class="fa-brands fa-css3-alt" style="font-size: 80PX;"></i>
+                                        <h4>CSS</h4>
+                                    </div>
+                                    
+                        </div>
+                    </div>
+                </div>
+
+                <!-- e commerce website -->
+                <div class="project-item pr-toggle">
+                    <div class="project-image">
+                        <img src="images/ecommerce-project.png" alt="E-commerce Project">
+                    </div>
+                    <div class="project-details">
+                        <p>E-Commerce Website</p>
+                        <p class="more-project-button"  onclick="toggleProjectSection('project-2')">more info</p>
+                    </div>
+                </div>
+
+                <div class="more-project-info " id="project-2">
+                    <span class="close-info" onclick="closeProjectInfo('project-2')">close info</span>
+                    <h2 id="project-heading">E-Commerce Website</h2>
+                    
+                    <div class="project-video">
+                        <video src="/videos/E Commerce Video.mp4" controls></video>
+                    </div>
+                    <div class="project-description">
+                        <h3>Project Description</h3>
+                        <p>This e-commerce website, built using Java, JSP, Servlets, JavaScript and MySQL, offers a smooth online shopping experience. Users can browse products by category, use a live search bar with suggestions, and view detailed product pages. The site includes user login, cart management, and secure ordering. Features like address management, order history, Razorpay payment integration, and payment confirmation modals enhance usability.</p>
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>User & Admin Login</li>
+                            <li>User/Admin Profile</li>
+                            <li>Search Product</li>
+                            <li>Add to Cart</li>
+                            <li>CheckOut Features</li>
+                            <li>Payment Option</li>
+                            <li>Database Integration</li>
+                        </ul>
+                    </div>
+                    <div class="tecnologies">
+                        <h3>Technologies Used</h3>
+                        <div class="tec-icons">
+                                    <div>
+                                        <i class="fa-brands fa-java" style="font-size: 80px;"></i>
+                                        <h4>JAVA</h4>
+                                    </div>
+                                    <div>
+                                         <i class="fa-brands fa-html5" style="font-size: 80PX;"></i>
+                                        <h4>HTML</h4>
+                                    </div>
+                                    <div>
+                                        <i class="fa-brands fa-css3-alt" style="font-size: 80PX;"></i>
+                                        <h4>CSS</h4>
+                                    </div>
+                                     <div>
+                                         <i class="fa-brands fa-js" style="font-size: 80PX;"></i>
+                                        <h4>JAVASCRIPT</h4>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- youtube clone -->
+                 <div class="project-item pr-toggle">
+                    <div class="project-image">
+                        <img src="images/Youtube Clone.png" alt="Youtube Clone">
+                    </div>
+                    <div class="project-details">
+                        <p>Youtube Clone</p>
+                        <p class="more-project-button"  onclick="toggleProjectSection('project-3')">more info</p>
+                    </div>
+                </div>
+
+                <div class="more-project-info " id="project-3">
+                    <span class="close-info" onclick="closeProjectInfo('project-3')">close info</span>
+                    <h2 id="project-heading">Youtube Clone</h2>
+                    
+                    <div class="project-video">
+                        <video src="/videos/Youtube Clone Video.mp4" controls></video>
+                    </div>
+                    <div class="project-description">
+                        <h3>Project Description</h3>
+                        <p>This e-commerce website, built using Java, JSP, Servlets, JavaScript and MySQL, offers a smooth online shopping experience. Users can browse products by category, use a live search bar with suggestions, and view detailed product pages. The site includes user login, cart management, and secure ordering. Features like address management, order history, Razorpay payment integration, and payment confirmation modals enhance usability.</p>
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>User & Admin Login</li>
+                            <li>User/Admin Profile</li>
+                            <li>Search Product</li>
+                            <li>Add to Cart</li>
+                            <li>CheckOut Features</li>
+                            <li>Payment Option</li>
+                            <li>Database Integration</li>
+                        </ul>
+                    </div>
+                    <div class="tecnologies">
+                        <h3>Technologies Used</h3>
+                        <div class="tec-icons">
+                                    <div>
+                                        <i class="fa-brands fa-java" style="font-size: 80px;"></i>
+                                        <h4>JAVA</h4>
+                                    </div>
+                                    <div>
+                                         <i class="fa-brands fa-html5" style="font-size: 80PX;"></i>
+                                        <h4>HTML</h4>
+                                    </div>
+                                    <div>
+                                        <i class="fa-brands fa-css3-alt" style="font-size: 80PX;"></i>
+                                        <h4>CSS</h4>
+                                    </div>
+                                     <div>
+                                         <i class="fa-brands fa-js" style="font-size: 80PX;"></i>
+                                        <h4>JAVASCRIPT</h4>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- tic-tac-toe- game -->
+                <div class="project-item pr-toggle">
+                    <div class="project-image">
+                        <img src="images/JS-TIC-TAC-TOE.png" alt="Tic-Tac-Toe Game">
+                    </div>
+                    <div class="project-details">
+                        <p>Tic-Tac-Toe Game</p>
+                        <p class="more-project-button"  onclick="toggleProjectSection('project-4')">more info</p>
+                    </div>
+                </div>
+
+                <div class="more-project-info " id="project-4">
+                    <span class="close-info" onclick="closeProjectInfo('project-4')">close info</span>
+                    <h2 id="project-heading">Tic-Tac-Toe Game</h2>
+                    
+                    <div class="project-video">
+                        <video src="/videos/Tic-Tac-Toe.mp4" controls></video>
+                    </div>
+                    <div class="project-description">
+                        <h3>Project Description</h3>
+                        <p>This is a simple Tic-Tac-Toe game built using JavaScript, HTML, and CSS. It features a clean, responsive UI where two players take turns marking X and O on a 3x3 grid. The game detects wins, draws, and allows easy reset for replay.</p>
+                        <h3>Key Features</h3>
+                        <ul>
+                           <li>Two-Player Mode</li>
+                           <li>Win & Draw Detection</li>
+                           <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                    <div class="tecnologies">
+                        <h3>Technologies Used</h3>
+                        <div class="tec-icons">
+                                    
+                                    <div>
+                                         <i class="fa-brands fa-html5" style="font-size: 80PX;"></i>
+                                        <h4>HTML</h4>
+                                    </div>
+                                    <div>
+                                        <i class="fa-brands fa-css3-alt" style="font-size: 80PX;"></i>
+                                        <h4>CSS</h4>
+                                    </div>
+                                     <div>
+                                         <i class="fa-brands fa-js" style="font-size: 80PX;"></i>
+                                        <h4>JAVASCRIPT</h4>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </article>
+
+        <article class="contact tab" id="contact">
+            <div class="article-title">
+                    <h2>CONTACT ME</h2>
+            </div>
+            <div class="artilce-tab">
+
+            </div>
+            <div class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7778.528195848698!2d77.63520618948704!3d12.890732208148139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14b06c1fd971%3A0xd4a183588562d764!2sKudlu%20Gate%2C%20Bengaluru%2C%20Karnataka%20560068!5e0!3m2!1sen!2sin!4v1775052635080!5m2!1sen!2sin" width="100%" height="450" style="border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="location"></iframe>
+            </div>
+
+            <div class="contact-form">
+                <div class="heading">
+                    <h2>Contact Form</h2>
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Your Name" id="name">
+                    <input type="email" placeholder="Your Email" id="email">
+                    <textarea placeholder="Your Message" id="message"></textarea>
+                </div>
+                <div class="submit-button">
+                    
+                    <button type="button" onclick="sendMail()"><i class="fa-solid fa-paper-plane" ></i>Send Message</button>
+                </div>
+            </div>
+            <div class="contact-message-popup" id="popup">
+                <p id="popuptext">dgdsg</p>
+            </div>
+
+        </article>
+    </section>
+    </main> 
+    <script src="Js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+(function(){
+  emailjs.init("9P6nT-11O9Sa_A17_");
+})();
+</script>
+</body>
+</html>
